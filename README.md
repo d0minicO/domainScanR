@@ -31,6 +31,7 @@ devtools::source_url("https://github.com/d0minicO/domainScanR/blob/main/domainSc
 
 # Arguments
  - input: the list of genes or proteins to search for enrichment of domains in. A character vector of gene names OR uniprot IDs to search
+ 
  - data_type (optional): whether gene names or uniprot IDs have been provided. One of c("gene", "uniprot)
  --- Default is to use gene names (data_type="gene")
   
@@ -102,6 +103,18 @@ ggsave(filename = paste0("domainScanR_example_uniprot_IDs.pdf"),
        height=4)
 			
 ```
+
+
+### Using a custom background, with extra parameters set
+
+domainScanR(input=ids,
+            data_type="uniprot",
+            background=bkg_ids,
+			plot_name="your_ids_custom_bkg",
+			stat_test="Chi",
+			thresh="0.01",
+			p_adj="FDR"
+			)
 
 
 # Output
