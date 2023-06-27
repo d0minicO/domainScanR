@@ -94,7 +94,7 @@ ids =
     "Q9H871"
     )
 
-domainScanR(input=ids,
+dat = domainScanR(input=ids,
             data_type="uniprot")
 
 # save the plot
