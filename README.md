@@ -118,6 +118,7 @@ domainScanR(input=ids,
             data_type="uniprot",
             background=bkg_ids,
 			plot_name="your_ids_custom_bkg",
+			to_plot=25,
 			stat_test="Chi",
 			thresh="0.01",
 			p_adj="FDR")
