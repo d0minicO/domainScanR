@@ -105,10 +105,10 @@ ggsave(filename = paste0("domainScanR_example_uniprot_IDs.pdf"),
 
 
 # Output
-#### default is to return a list
-#### first item is the plot
-####  second item is a tibble with the full table of result of the statistical test
-#### NOTE: if to_plot=NA is used, just the table is returned
+By Default, the function returns a list
+- First item is the plot
+- Second item is a tibble with the full table of result of the statistical test
+--- NOTE: if to_plot=NA is used, just the table is returned
 
 [![Example image](https://ibb.co/z7y4Mwy)](https://github.com/d0minicO/domainScanR/blob/main/example_output/domainScanR_example_uniprot_IDs.png)
 
