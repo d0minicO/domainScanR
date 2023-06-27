@@ -97,25 +97,31 @@ ids =
 domainScanR(input=ids,
             data_type="uniprot")
 
-# save the plot if you want to
-ggsave(filename = paste0("domainScanR_example_uniprot_IDs.pdf"),
+# save the plot
+ggsave(plot=dat[[1]],
+       filename = "domainScanR_example_uniprot_IDs.pdf",
        width=8,
        height=4)
-			
+
+# save the table
+dat[[2]] %>%
+  write.table(file="domainScanR_example_uniprot_IDs_table.tsv",
+              quote=F,
+              sep="\t",
+              row.names=F)
 ```
 
 
 ### Using a custom background, with extra parameters set
-
+```sh
 domainScanR(input=ids,
             data_type="uniprot",
             background=bkg_ids,
 			plot_name="your_ids_custom_bkg",
 			stat_test="Chi",
 			thresh="0.01",
-			p_adj="FDR"
-			)
-
+			p_adj="FDR")
+```
 
 # Output
 By Default, the function returns a list
