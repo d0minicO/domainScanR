@@ -434,7 +434,8 @@ domainScanR_shiny <- function(input,
       theme_bw()+
       theme(panel.grid=element_blank(),
             line=element_line(size=0.1),
-            legend.key.size = unit(2,"mm"))
+            legend.key.size = unit(2,"mm"),
+            text=element_text(size=14,colour="black"))
     
     ## add a title if requested
     if (!is.null(plot_name)){
