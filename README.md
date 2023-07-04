@@ -4,6 +4,9 @@
 
 domainScanR is a custom R function that takes gene names or Uniprot IDs and outputs an enrichment plot and a table quantifying enrichment of protein domains
 
+Also available as a shiny app! https://dominico.shinyapps.io/domainScanR/
+
+
 ---
 # Install
 ### Part 1 -- install package dependencies if you have not already got them
